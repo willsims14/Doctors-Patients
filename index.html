@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Doctors and Patients</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="lib/node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body ng-app="MyApp">
+
+<header><h1>Doctors and Patients</h1></header>
+<div id="navbar">
+
+	<div class="col-sm-4">
+		<a ng-href="#!/"><input class="btn btn-default" type="button" value="Home"></a>
+	</div>
+
+	<div class="col-sm-4">
+		<a ng-href="#!/doctors"><input class="btn btn-default" type="button" value="Doctors"></a>
+	</div>
+
+	<div class="col-sm-4">
+		<a ng-href="#!/patients"><input class="btn btn-default" type="button" value="Patients"></a>
+	</div>
+
+</div>
+
+<hr>
+
+
+<div ng-view></div>
+
+
+
+
+
+
+
+<!-- Dependencies -->
+<script type="text/javascript" src="lib/node_modules/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="lib/node_modules/firebase/firebase.js"></script>
+<script type="text/javascript" src="lib/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- App -->
+<script type="text/javascript" src="app/app.js"></script>
+<script type="text/javascript" src="app/values/fb-creds.js"></script>
+<!-- Factories -->
+<script type="text/javascript" src="app/factories/DoctorFactory.js"></script>
+<script type="text/javascript" src="app/factories/PatientFactory.js"></script>
+<!-- Controllers -->
+<script type="text/javascript" src="app/controllers/DoctorsCtrl.js"></script>
+<script type="text/javascript" src="app/controllers/PatientsCtrl.js"></script>
+</body>
+</html>
